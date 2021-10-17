@@ -5,5 +5,20 @@ Input Privacy: The guarantee that a user’s input data cannot be observed by ot
 Output Privacy: The guarantee that the output of a model is not visible by anyone except for the user whose data is being inferred upon.
 Model Privacy: The guarantee that the model cannot be stolen by a malicious party.
 
+Input and Output Privacy:
+
+Input user data and resulting model outputs inferred from that data should not be visible to any parties except for the user in order to comply with the four pillars of perfectly privacy-preserving AI. Preserving user data privacy is not only beneficial for the users themselves, but also for the companies processing potentially sensitive information. Privacy goes hand in hand with security. Having proper security in place means that data leaks are much less likely to occur, leading to the ideal scenario: no loss of user trust and no fines for improper data management.
+
+Solutions:
+
+Homomorphic Encryption: 
+homomorphic encryption allows for non-polynomial operations on encrypted data. For machine learning, this means training & inference can be performed directly on encrypted data. Homomorphic encryption has successfully been applied to random forests, naive Bayes, and logistic regression designed low-degree polynomial algorithms that classify encrypted data. More recently, there have been adaptations of deep learning models to the encrypted domain.
+
+Secure Multiparty Computation (MPC): 
+The idea behind MPC is that two or more parties who do not trust each other can transform their inputs into “non sense” which gets sent into a function whose output is only sensical when the correct number of inputs are used. Among other applications, MPC has been used for genomic diagnosis using the genomic data owned by different hospitals, and linear regression, logistic regression, and neural networks for classifying MNIST images. There are a number of tasks which cannot be accomplished with machine learning given to the lack of data required to train classification and generative models. Not because the data isn’t out there, but because the sensitive nature of the information means that it cannot be shared or sometimes even collected, spanning medical data or even speaker-specific metadata which might help improve automatic speech recognition systems (e.g., age group, location, first language).
+
+Federated Learning: 
+Federated learning is basically on-device machine learning. It is only truly made private when combined with differentially private training and MPC for secure model aggregation, so the data that was used to train a model cannot be reverse engineered from the weight updates output out of a single phone. 
+
 Reference:
 https://towardsdatascience.com/perfectly-privacy-preserving-ai-c14698f322f5
