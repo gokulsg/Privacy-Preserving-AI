@@ -1,0 +1,9 @@
+There are four Pillars of Perfectly-Privacy Preserving AI. They are:
+
+Training Data Privacy: The guarantee that a malicious actor will not be able to reverse-engineer the training data.
+Input Privacy: The guarantee that a user’s input data cannot be observed by other parties, including the model creator.
+Output Privacy: The guarantee that the output of a model is not visible by anyone except for the user whose data is being inferred upon.
+Model Privacy: The guarantee that the model cannot be stolen by a malicious party.
+
+Reference:
+https://towardsdatascience.com/perfectly-privacy-preserving-ai-c14698f322f5
