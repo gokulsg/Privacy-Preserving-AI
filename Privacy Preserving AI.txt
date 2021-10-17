@@ -20,5 +20,12 @@ The idea behind MPC is that two or more parties who do not trust each other can 
 Federated Learning: 
 Federated learning is basically on-device machine learning. It is only truly made private when combined with differentially private training and MPC for secure model aggregation, so the data that was used to train a model cannot be reverse engineered from the weight updates output out of a single phone. 
 
+Model Privacy:
+Machine learning models form the core product & IP of many companies, so having a model stolen is a severe threat and can have significant negative business implications. A model can be stolen outright or can be reverse-engineered based on its outputs
+
+Solutions
+1) Differential privacy usually means compromising model accuracy but can help to acheive model privacy.
+2) Homomorphic encryption can be used not only to preserve input and output privacy, but also model privacy, if one chooses to encrypt a model in the cloud. This comes at significant computational cost, however, and does not prevent model inversion attacks.
+
 Reference:
 https://towardsdatascience.com/perfectly-privacy-preserving-ai-c14698f322f5
