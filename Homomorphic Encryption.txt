@@ -1,0 +1,20 @@
+Privacy enhancing technologies (PETs) promise a revolution in data collaboration by sharing more data than ever without the need to mutually trust one another. In the light of the emerging data-driven economy and in order to unlock the potential of AI and machine learning in particular, access to more data is necessary. PETs want to bridge the gap of data protection on one side and the value of data (or, the need-to-share) on the other, also called the privacy-utility tradeoff.
+
+PETs enable secure data sharing and collaboration in totally new ways. Homomorphic encryption, along with federated learning, differential privacy, secure multiparty computation, secure enclaves, zero-knowledge proof and synthetic data, is crossing the chasm from Research & Development to mainstream applications.
+
+Homomorphic Encryption:
+
+In short, homomorphic encryption enables computational operations on encrypted data without decryption of that data. For example, a request to a databank can be answered while the data in the databank itself cannot be accessed.
+
+The computation or analysis happens on the ciphertext (encrypted data). The original information (data in the clear, plaintext or cleartext data) is not revealed. The result of the computation is also encrypted, and needs to be decrpyted (transformed back into plaintext) to see the results.
+
+By this means, to the important data protection practice of securing data when it is stored (protection of data at rest), when it is sent (protection of data in transit), homomorphic encryption adds a third layer of security for data when it is worked with (protection of data in use).
+
+Generally, homomorphic encryption is a form of public encryption. A public key is used to encrypt data that can only be decrypted with the matching private key. While the public key is used for encryption and can be shared, the private key is used for decryption and must be kept secret. Without the private key, the encrypted data can be worked with, but not decrypted.
+
+
+
+
+
+Reference:
+https://medium.com/golden-data/introduction-to-homomorphic-encryption-d903d02d4ce0
