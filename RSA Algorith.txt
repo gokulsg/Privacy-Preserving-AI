@@ -1,0 +1,30 @@
+The RSA algorithm is an asymmetric cryptography algorithm; this means that it uses a public key and a private key (i.e two different, mathematically linked keys). As their names suggest, a public key is shared publicly, while a private key is secret and must not be shared with anyone.
+
+The RSA algorithm is named after those who invented it in 1978: Ron Rivest, Adi Shamir, and Leonard Adleman.
+
+Working of RSA Algorithm:
+
+The RSA algorithm ensures that the keys are as secure as possible. The following steps highlight how it works:
+
+1. Generating the keys:
+
+    i)   Select two large prime numbers, x and y. The prime numbers need to be large so that they will be difficult for someone to figure out.
+    ii)  Calculate n=x∗y.
+    iii) Calculate the totient function; ϕ(n)=(x−1)(y−1).
+    iv)  Select an integer e, such that e is co-prime to ϕ(n) and 1<e<ϕ(n). The pair of numbers (n,e) makes up the public key.
+    v)   Calculate d such that e.d = 1 mod ϕ(n).
+    
+    d can be found using the extended euclidean algorithm. The pair (n,d) makes up the private key.
+    
+2. Encryption:
+    Given a plaintext P, represented as a number, the ciphertext C is calculated as:
+          C= P^e mod n
+
+3. Decryption:
+    Using the private key (n,d), the plaintext can be found using:
+          P= C^d mod n
+          
+
+
+Reference:
+https://www.educative.io/edpresso/what-is-the-rsa-algorithm
